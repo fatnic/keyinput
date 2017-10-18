@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <script src="./keyinput.js"></script>
+  <script>
+
+    const keyinp = new KeyInput()
+    keyinp.init()
+
+    loop()
+    function loop() {
+      if (keyinp.isDown("up")) { console.log("pressing up") }
+      requestAnimationFrame(loop)
+    }
+      
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "keyinput",
+  "version": "1.0.0",
+  "description": "Keyboard input",
+  "main": "src/keyinput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Nicholson <fatnic388@gmail.com>",
+  "license": "ISC"
+}
