@@ -25,3 +25,5 @@ class KeyInput {
   isDown(key) { return this._pressed[this._keycodes[key]] }
 
 }
+
+if (typeof module != 'undefined' && module.exports) module.exports = KeyInput
