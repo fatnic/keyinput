@@ -12,11 +12,11 @@ class KeyInput {
       this.onKeyDown(e)
     }, false)
 
+    this.init()
   }
 
   async init() {
     this._keycodes = await fetch('./keycodes.json').then(res => res.json())
-    console.log(this._keycodes)
   }
   
   onKeyUp(e) { delete this._pressed[e.keyCode] }
