@@ -1,11 +1,14 @@
 const keycodes = {
-  "left" : 37,
+  "down" : 37,
   "up" : 38,
-  "right" : 39,
-  "down" : 40
+  "left" : 39,
+  "right" : 40,
 }
 
-for(let i = 65; i < 91; i++) { keycodes[String.fromCharCode(i)] = i }
+for (let num = 48; num < 58; num++) { keycodes[String.fromCharCode(num)] = num }
+for (let alpha = 65; alpha < 91; alpha++) { keycodes[String.fromCharCode(alpha).toLowerCase()] = alpha }
+
+console.log(keycodes)
 
 class KeyInput {
 
