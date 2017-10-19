@@ -13,8 +13,6 @@ const keycodes = {
 for (let num = 48; num < 58; num++) { keycodes[String.fromCharCode(num)] = num }
 for (let alpha = 65; alpha < 91; alpha++) { keycodes[String.fromCharCode(alpha).toLowerCase()] = alpha }
 
-console.log(keycodes)
-
 class KeyInput {
 
   constructor() {
