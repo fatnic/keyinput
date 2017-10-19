@@ -1,7 +1,15 @@
+const keycodes = {
+  "left" : 37,
+  "up" : 38,
+  "right" : 39,
+  "down" : 40
+}
+
+for(let i = 65; i < 91; i++) { keycodes[String.fromCharCode(i)] = i }
+
 class KeyInput {
 
   constructor() {
-    this._keycodes = {}
     this._pressed = {}
 
     window.addEventListener('keyup', (e) => {
@@ -11,18 +19,12 @@ class KeyInput {
     window.addEventListener('keydown', (e) => {
       this.onKeyDown(e)
     }, false)
-
-    this.init()
-  }
-
-  async init() {
-    this._keycodes = await fetch('./keycodes.json').then(res => res.json())
   }
   
   onKeyUp(e) { delete this._pressed[e.keyCode] }
   onKeyDown(e) { this._pressed[e.keyCode] = true }
 
-  isDown(key) { return this._pressed[this._keycodes[key]] }
+  isDown(key) { return this._pressed[keycodes[key]] }
 
 }
 

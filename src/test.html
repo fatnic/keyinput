@@ -13,7 +13,14 @@
 
     loop()
     function loop() {
+      
       if (keyinp.isDown("up")) { console.log("pressing up") }
+      if (keyinp.isDown("down")) { console.log("pressing down") }
+      if (keyinp.isDown("left")) { console.log("pressing left") }
+      if (keyinp.isDown("right")) { console.log("pressing right") }
+
+      if (keyinp.isDown("A")) { console.log("left") }
+
       requestAnimationFrame(loop)
     }
       
