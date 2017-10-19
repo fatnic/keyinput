@@ -1,8 +1,13 @@
 const keycodes = {
-  "down" : 37,
   "up" : 38,
-  "left" : 39,
-  "right" : 40,
+  "left" : 37,
+  "right" : 39,
+  "down" : 40,
+
+  "space" : 32,
+  "enter" : 13,
+  "esc" : 27,
+  "shift" : 16
 }
 
 for (let num = 48; num < 58; num++) { keycodes[String.fromCharCode(num)] = num }
